@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustrasi meja rotan">
+  <defs>
+    <pattern id="weaveMeja" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#DFA75F"/>
+      <path d="M0 4h14M0 11h14M4 0v14M11 0v14" stroke="#A66B32" stroke-width="2.4"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" rx="18" fill="#F6EAD8"/>
+  <ellipse cx="200" cy="258" rx="132" ry="15" fill="#E3CEAA" opacity=".75"/>
+
+  <!-- kaki -->
+  <g stroke="#8D5524" stroke-width="12" stroke-linecap="round">
+    <path d="M126 138l-18 116"/>
+    <path d="M274 138l18 116"/>
+    <path d="M170 148l-8 106"/>
+    <path d="M230 148l8 106"/>
+    <path d="M126 205h148" stroke-width="8" opacity=".8"/>
+  </g>
+
+  <!-- mejanya -->
+  <ellipse cx="200" cy="132" rx="136" ry="42" fill="url(#weaveMeja)" stroke="#8D5524" stroke-width="10"/>
+  <ellipse cx="200" cy="126" rx="112" ry="30" fill="none" stroke="#8D5524" stroke-width="4" opacity=".65"/>
+
+  <!-- gelas kecil -->
+  <path d="M182 96h32l-5 28h-22z" fill="#FFF8EC" opacity=".95" stroke="#8D5524" stroke-width="3"/>
+  <path d="M190 106h16" stroke="#D9A566" stroke-width="3" stroke-linecap="round"/>
+</svg>

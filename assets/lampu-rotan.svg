@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustrasi lampu gantung rotan">
+  <defs>
+    <pattern id="weaveLampu" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#D9A566"/>
+      <path d="M0 3h12M0 9h12M3 0v12M9 0v12" stroke="#A66B32" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="cahayaLampu">
+      <stop offset="0" stop-color="#FFE9AE" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFE9AE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" rx="18" fill="#F6EAD8"/>
+
+  <!-- kabel -->
+  <path d="M200 0v66" stroke="#8D5524" stroke-width="6"/>
+
+  <!-- cahaya -->
+  <circle cx="200" cy="168" r="112" fill="url(#cahayaLampu)"/>
+
+  <!-- kap lampu -->
+  <path d="M108 152q10-80 92-84 82 4 92 84z" fill="url(#weaveLampu)" stroke="#8D5524" stroke-width="9" stroke-linejoin="round"/>
+  <ellipse cx="200" cy="152" rx="92" ry="22" fill="#C68B4A" stroke="#8D5524" stroke-width="8"/>
+  <path d="M200 70v84M150 79l18 71M250 79l-18 71" stroke="#8D5524" stroke-width="5" opacity=".7"/>
+
+  <!-- bohlam -->
+  <circle cx="200" cy="176" r="20" fill="#FFF3C4" opacity=".95"/>
+  <path d="M188 156h24" stroke="#8D5524" stroke-width="5" stroke-linecap="round"/>
+</svg>

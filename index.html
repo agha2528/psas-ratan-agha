@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ridwan Rattan Export — produsen dan eksporter rotan Cirebon. Cek ketersediaan produk, varian, total harga, ongkir, dan estimasi pengiriman dalam satu halaman.">
+  <title>Ridwan Rattan Export — Ekspor Rotan Cirebon</title>
+
+  <link rel="icon" href="assets/logo-ridwan-rattan.svg" type="image/svg+xml">
+
+  <!-- Bootstrap 5 + Bootstrap Icons (CDN diizinkan oleh soal) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS sendiri (dipisah dari HTML) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Data dan logika (dipisah dari HTML, urutan penting: data dulu) -->
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ================= NAVIGASI ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm navbar-rre">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+        <img src="assets/logo-ridwan-rattan.svg" alt="Logo Ridwan Rattan Export" width="40" height="40">
+        <span class="brand-text">Ridwan <span>Rattan</span> Export</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama"
+              aria-controls="navbarUtama" aria-expanded="false" aria-label="Buka navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarUtama">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kalkulator">Kalkulator</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pengiriman">Pengiriman</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+        <a class="btn btn-rre btn-sm ms-lg-3 mt-3 mt-lg-0" href="#kalkulator">
+          <i class="bi bi-calculator"></i> Hitung Harga
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================= BERANDA ================= -->
+    <section id="beranda" class="hero-section scroll-offset">
+      <div class="container">
+        <div class="row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <span class="badge badge-pill badge-hero mb-3">
+              <i class="bi bi-globe2"></i> Ekspor rotan dari Cirebon
+            </span>
+            <h1 class="display-5 fw-bold mb-3">
+              Rotan Cirebon berkualitas,<br>
+              <span class="text-highlight">harga jelas sejak awal.</span>
+            </h1>
+            <p class="lead text-muted mb-4">
+              Ridwan Rattan Export memproduksi furnitur dan anyaman rotan untuk klien dalam negeri maupun luar negeri.
+              Semua yang biasa ditanyakan calon klien—stok, varian, total harga, ongkir, dan estimasi sampai—sudah tersedia di website ini.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#produk" class="btn btn-rre btn-lg"><i class="bi bi-box-seam"></i> Lihat Produk</a>
+              <a href="#kalkulator" class="btn btn-outline-rre btn-lg"><i class="bi bi-calculator"></i> Cek Total Harga</a>
+            </div>
+            <div class="row g-3 mt-5 stat-row text-center">
+              <div class="col-6 col-md-3">
+                <div class="stat-item"><strong>2009</strong><span>Mulai berusaha</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-item"><strong>4+</strong><span>Varian produk</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-item"><strong>12</strong><span>Negara tujuan</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-item"><strong>&lt; 24 jam</strong><span>Waktu respons</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-collage">
+              <img src="assets/kursi-rotan.svg" alt="Ilustrasi kursi rotan Cirebon" class="img-utama">
+              <img src="assets/keranjang-rotan.svg" alt="Ilustrasi keranjang anyaman rotan" class="img-kecil img-kecil-kiri">
+              <img src="assets/lampu-rotan.svg" alt="Ilustrasi lampu gantung rotan" class="img-kecil img-kecil-kanan">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TENTANG / PUBLIKASI BISNIS ================= -->
+    <section id="tentang" class="py-5 scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Tentang Kami</span>
+          <h2 class="section-title">Publikasi Bisnis Pak Ridwan</h2>
+          <p class="text-muted mx-auto section-desc">
+            Informasi usaha yang bisa langsung dibaca calon klien sebelum menghubungi kami.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="card card-rre h-100">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="h4 fw-bold mb-3">Ridwan Rattan Export</h3>
+                <p>
+                  Berdiri sejak <strong>2009</strong> di Cirebon, Jawa Barat, kami mengolah rotan pilihan menjadi
+                  furnitur dan produk anyaman yang siap dikirim ke berbagai kota di Indonesia maupun ke pasar ekspor.
+                  Setiap produk dianyam oleh pengrajin lokal dengan finishing yang rapi dan awet.
+                </p>
+                <p>
+                  Kami melayani pembelian satuan untuk kebutuhan rumah tangga, kafe, dan hotel, hingga pesanan
+                  kontainer untuk mitra distributors. Untuk pesanan besar, tersedia penyesuaian ukuran, warna,
+                  dan kemasan sesuai permintaan.
+                </p>
+                <div class="row g-3 mt-4">
+                  <div class="col-sm-6">
+                    <div class="info-box">
+                      <i class="bi bi-geo-alt-fill"></i>
+                      <div><strong>Lokasi workshop</strong><br>Jl. Raya Rotan No. 88, Kec. Sundan, Cirebon, Jawa Barat</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="info-box">
+                      <i class="bi bi-clock-fill"></i>
+                      <div><strong>Jam operasional</strong><br>Senin–Sabtu, 08.00–17.00 WIB</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="info-box">
+                      <i class="bi bi-patch-check-fill"></i>
+                      <div><strong>Layanan</strong><br>Ready stock, pre-order, dan custom desain</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="info-box">
+                      <i class="bi bi-truck"></i>
+                      <div><strong>Pengiriman</strong><br>Kurir darat, laut, dan udara</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card card-rre h-100 overflow-hidden">
+              <img src="assets/meja-rotan.svg" alt="Ilustrasi meja rotan produksi Ridwan Rattan Export" class="card-img-top img-tentang">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold mb-2">Kenapa memilih kami?</h3>
+                <ul class="list-unstyled mb-0 checklist">
+                  <li><i class="bi bi-check-circle-fill"></i> Bahan rotan pilihan dengan kadar air terkontrol.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Stok dan harga ditampilkan terbuka di website.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Estimasi ongkir dan waktu sampai dihitung otomatis.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Garansi kerusakan produksi selama 30 hari.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUK & VARIAN ================= -->
+    <section id="produk" class="py-5 bg-section scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Katalog</span>
+          <h2 class="section-title">Produk &amp; Varian Rotan</h2>
+          <p class="text-muted mx-auto section-desc">
+            Status ketersediaan dan daftar varian ditampilkan langsung. Klik <strong>Pilih</strong> untuk masuk ke kalkulator harga.
+          </p>
+        </div>
+        <div class="row g-4" id="daftarProduk">
+          <!-- D diisi oleh JavaScript dari objek dataRidwanRattan -->
+          <div class="col-12 text-center text-muted"><span class="spinner-border spinner-border-sm"></span> Memuat produk…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KALKULATOR ================= -->
+    <section id="kalkulator" class="py-5 scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Hitung Sendiri</span>
+          <h2 class="section-title">Kalkulator Total Harga</h2>
+          <p class="text-muted mx-auto section-desc">
+            Pilih produk, varian, jumlah, dan tujuan pengiriman. Subtotal, ongkir, total, serta estimasi sampai dihitung otomatis oleh JavaScript.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <div class="card card-rre kalkulator-card">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="h5 fw-bold mb-4"><i class="bi bi-sliders2"></i> Detail Pesanan</h3>
+                <form id="formKalkulator" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-7">
+                      <label for="pilihProduk" class="form-label fw-semibold">Produk</label>
+                      <select class="form-select" id="pilihProduk" required></select>
+                    </div>
+                    <div class="col-md-5">
+                      <label for="pilihVarian" class="form-label fw-semibold">Varian</label>
+                      <select class="form-select" id="pilihVarian" required></select>
+                    </div>
+                    <div class="col-md-5">
+                      <label for="jumlah" class="form-label fw-semibold">Jumlah (pcs)</label>
+                      <input type="number" class="form-control" id="jumlah" min="1" max="99" value="1" required>
+                      <div class="form-text" id="infoStok">Stok dan berat per pcs ditampilkan di sini.</div>
+                    </div>
+                    <div class="col-md-7">
+                      <label for="tujuan" class="form-label fw-semibold">Tujuan pengiriman</label>
+                      <select class="form-select" id="tujuan" required></select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2 mt-4">
+                    <button type="submit" class="btn btn-rre px-4"><i class="bi bi-calculator"></i> Hitung Sekarang</button>
+                    <button type="button" class="btn btn-outline-secondary px-4" id="tombolReset"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+                  </div>
+                </form>
+
+                <div class="alert alert-info mt-4 mb-0" id="statusStok" role="status">
+                  <i class="bi bi-info-circle"></i> Status produk akan muncul setelah pilihan dibuat.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card card-hasil" aria-live="polite">
+              <div class="card-body p-4 p-lg-4">
+                <h3 class="h5 fw-bold mb-1"><i class="bi bi-receipt"></i> Rincian Biaya</h3>
+                <p class="text-muted small mb-4" id="ringkasanProduk">Ringkasan pesanan</p>
+
+                <div class="hasil-row">
+                  <span>Subtotal (<span id="beratInfo">0 kg</span>)</span>
+                  <strong id="nilaiSubtotal">Rp0</strong>
+                </div>
+                <div class="hasil-row">
+                  <span>Biaya pengiriman</span>
+                  <strong id="nilaiOngkir">Rp0</strong>
+                </div>
+                <hr>
+                <div class="hasil-row hasil-total">
+                  <span>Total bayar</span>
+                  <strong id="nilaiTotal">Rp0</strong>
+                </div>
+
+                <div class="estimasi-box mt-4">
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <i class="bi bi-truck-front fs-5"></i>
+                    <strong>Estimasi sampai</strong>
+                  </div>
+                  <div class="fs-4 fw-bold" id="nilaiEstimasi">–</div>
+                  <div class="small" id="nilaiTanggal">Pilih tujuan pengiriman untuk melihat perkiraan tanggal.</div>
+                </div>
+
+                <p class="text-muted small mt-4 mb-0">
+                  <i class="bi bi-info-circle"></i> Angka di atas adalah simulasi. Harga final dikonfirmasi kembali oleh tim kami lewat WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PENGIRIMAN ================= -->
+    <section id="pengiriman" class="py-5 bg-section scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Logistik</span>
+          <h2 class="section-title">Tarif &amp; Estimasi Pengiriman</h2>
+          <p class="text-muted mx-auto section-desc">
+            Tarif dihitung per kilogram berat produk. Estimasi waktu dihitung dalam hari kerja sejak barang diserahkan ke kurir.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="card card-rre">
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0 tabel-ongkir">
+                  <thead>
+                    <tr>
+                      <th>Tujuan</th>
+                      <th class="text-end">Tarif / kg</th>
+                      <th class="text-center">Estimasi</th>
+                      <th>Keterangan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabelOngkir">
+                    <!-- D diisi oleh JavaScript dari objek dataRidwanRattan -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-rre h-100">
+              <div class="card-body p-4">
+                <h3 class="h6 fw-bold mb-3"><i class="bi bi-lightbulb"></i> Cara membaca tabel</h3>
+                <ol class="small mb-0 ps-3">
+                  <li class="mb-2">Berat total = jumlah pcs × berat per pcs (tertera di katalog).</li>
+                  <li class="mb-2">Ongkir = berat total × tarif per kg tujuan.</li>
+                  <li class="mb-2">Total bayar = subtotal produk + ongkir.</li>
+                  <li>Estimasi sampai = tanggal hari ini + rentang hari kerja tujuan.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="py-5 scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Tanya Jawab</span>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="text-muted mx-auto section-desc">
+            Lima pertanyaan paling sering ditanyakan calon klien—dan jawabannya ada di sini.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="daftarFaq">
+              <!-- D diisi oleh JavaScript dari objek dataRidwanRattan -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak" class="py-5 bg-section scroll-offset">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-kicker">Hubungi Kami</span>
+          <h2 class="section-title">Siap Melanjutkan Pesanan?</h2>
+          <p class="text-muted mx-auto section-desc">
+            Kirim detail pesanan lewat WhatsApp, tim kami akan membalas maksimal 1×24 jam kerja.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card card-kontak h-100 text-center p-4">
+              <div class="icon-kontak mx-auto mb-3"><i class="bi bi-whatsapp"></i></div>
+              <h3 class="h6 fw-bold">WhatsApp / Telepon</h3>
+              <p class="text-muted small mb-3">0812-3456-7890 (Pak Ridwan)</p>
+              <a class="btn btn-rre btn-sm" id="linkWhatsapp" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-send"></i> Chat Sekarang
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-kontak h-100 text-center p-4">
+              <div class="icon-kontak mx-auto mb-3"><i class="bi bi-envelope-paper"></i></div>
+              <h3 class="h6 fw-bold">Email</h3>
+              <p class="text-muted small mb-3">halo@ridwanrattanexport.id</p>
+              <a class="btn btn-outline-rre btn-sm" href="mailto:halo@ridwanrattanexport.id">
+                <i class="bi bi-envelope"></i> Kirim Email
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-kontak h-100 text-center p-4">
+              <div class="icon-kontak mx-auto mb-3"><i class="bi bi-geo-alt"></i></div>
+              <h3 class="h6 fw-bold">Alamat Workshop</h3>
+              <p class="text-muted small mb-3">Jl. Raya Rotan No. 88, Kec. Sundan, Cirebon, Jawa Barat</p>
+              <a class="btn btn-outline-rre btn-sm" href="#tentang"><i class="bi bi-info-circle"></i> Tentang Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-rre pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/logo-ridwan-rattan.svg" alt="Logo Ridwan Rattan Export" width="38" height="38">
+            <span class="fw-bold">Ridwan <span class="text-highlight">Rattan</span> Export</span>
+          </div>
+          <p class="small text-muted mb-0">
+            Menyediakan produk rotan Cirebon berkualitas dengan informasi harga dan pengiriman yang transparan untuk setiap calon klien.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="h6 fw-bold mb-3">Navigasi</h3>
+          <ul class="list-unstyled small footer-links mb-0">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kalkulator">Kalkulator</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 fw-bold mb-3">Kontak Cepat</h3>
+          <p class="small text-muted mb-1"><i class="bi bi-telephone"></i> 0812-3456-7890</p>
+          <p class="small text-muted mb-1"><i class="bi bi-envelope"></i> halo@ridwanrattanexport.id</p>
+          <p class="small text-muted mb-0"><i class="bi bi-clock"></i> Senin–Sabtu, 08.00–17.00 WIB</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center text-muted small mb-0">
+        © <span id="tahun">2026</span> Ridwan Rattan Export. Dibuat untuk PSAS Kelas X PPLG — Web Development.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle untuk navbar collapse & accordion -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

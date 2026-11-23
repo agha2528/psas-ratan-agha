@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Ridwan Rattan Export">
+  <defs>
+    <pattern id="anyamanLogo" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0H8M0 4H8M0 0V8M4 0V8" stroke="#D9A566" stroke-width="1" opacity=".7"/>
+    </pattern>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="#3E2723"/>
+  <circle cx="32" cy="32" r="26" fill="url(#anyamanLogo)" opacity=".45"/>
+  <circle cx="32" cy="32" r="23" fill="#3E2723" opacity=".92"/>
+  <path d="M20 22h24M20 42h24M22 22v20M42 22v20" stroke="#D9A566" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 28l6 8 6-8" fill="none" stroke="#F6EAD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#D9A566" stroke-width="2"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustrasi kursi rotan">
+  <defs>
+    <pattern id="weaveKursi" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#D9A566"/>
+      <path d="M0 3h12M0 9h12M3 0v12M9 0v12" stroke="#A66B32" stroke-width="2.2"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" rx="18" fill="#F6EAD8"/>
+  <ellipse cx="200" cy="262" rx="126" ry="16" fill="#E3CEAA" opacity=".75"/>
+
+  <!-- kaki kursi -->
+  <g stroke="#8D5524" stroke-width="11" stroke-linecap="round">
+    <path d="M132 196l-14 62"/>
+    <path d="M268 196l14 62"/>
+    <path d="M158 196l-8 60"/>
+    <path d="M242 196l8 60"/>
+  </g>
+
+  <!-- sandaran -->
+  <rect x="118" y="42" width="164" height="118" rx="26" fill="url(#weaveKursi)" stroke="#8D5524" stroke-width="9"/>
+  <path d="M200 44v114" stroke="#8D5524" stroke-width="7" opacity=".75"/>
+
+  <!-- dudukan -->
+  <ellipse cx="200" cy="188" rx="102" ry="30" fill="url(#weaveKursi)" stroke="#8D5524" stroke-width="9"/>
+  <path d="M110 186q90 34 180 0" fill="none" stroke="#8D5524" stroke-width="5" opacity=".55"/>
+
+  <!-- bantal tipis -->
+  <path d="M156 156q44-16 88 0l-8 20q-36-12-72 0z" fill="#FFF8EC" opacity=".9"/>
+</svg>

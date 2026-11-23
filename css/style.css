@@ -1,0 +1,448 @@
+/* ============================================================
+   Ridwan Rattan Export — gaya visual utama
+  ============================================================ */
+
+:root {
+  --rre-coklat-tua: #3e2723;
+  --rre-coklat: #8d5524;
+  --rre-emas: #d9a566;
+  --rre-krem: #fbf5ec;
+  --rre-hijau: #2e7d5b;
+  --rre-abu: #6c757d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #2c2420;
+  background-color: #fff;
+}
+
+.scroll-offset {
+  scroll-margin-top: 76px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-rre {
+  background-color: var(--rre-coklat-tua) !important;
+}
+
+.navbar-rre .navbar-brand {
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.navbar-rre .brand-text span {
+  color: var(--rre-emas);
+}
+
+.navbar-rre .nav-link {
+  font-size: .93rem;
+  color: rgba(255, 255, 255, .82) !important;
+  transition: color .2s ease;
+}
+
+.navbar-rre .nav-link:hover,
+.navbar-rre .nav-link:focus {
+  color: var(--rre-emas) !important;
+}
+
+/* ---------- Tombol ---------- */
+.btn-rre {
+  background-color: var(--rre-coklat);
+  border-color: var(--rre-coklat);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-rre:hover,
+.btn-rre:focus {
+  background-color: var(--rre-coklat-tua);
+  border-color: var(--rre-coklat-tua);
+  color: #fff;
+}
+
+.btn-outline-rre {
+  color: var(--rre-coklat);
+  border-color: var(--rre-coklat);
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-outline-rre:hover,
+.btn-outline-rre:focus {
+  background-color: var(--rre-coklat);
+  border-color: var(--rre-coklat);
+  color: #fff;
+}
+
+/* ---------- Hero ---------- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(217, 165, 102, .20), transparent 38%),
+    radial-gradient(circle at 88% 10%, rgba(141, 85, 36, .14), transparent 35%),
+    linear-gradient(180deg, #fffdf9 0%, var(--rre-krem) 100%);
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 60px;
+  background: linear-gradient(180deg, transparent, rgba(217, 165, 102, .10));
+  pointer-events: none;
+}
+
+.text-highlight {
+  color: var(--rre-coklat);
+}
+
+.badge-hero {
+  background-color: rgba(141, 85, 36, .12);
+  color: var(--rre-coklat);
+  font-weight: 600;
+  padding: .55rem .9rem;
+  border-radius: 50px;
+}
+
+.stat-row {
+  border-top: 1px solid rgba(141, 85, 36, .16);
+  padding-top: 1.25rem;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--rre-coklat-tua);
+}
+
+.stat-item span {
+  font-size: .78rem;
+  color: var(--rre-abu);
+}
+
+.hero-collage {
+  position: relative;
+  min-height: 380px;
+}
+
+.hero-collage .img-utama {
+  width: 88%;
+  border-radius: 28px;
+  box-shadow: 0 22px 45px rgba(62, 39, 35, .18);
+  display: block;
+  margin-left: auto;
+}
+
+.hero-collage .img-kecil {
+  position: absolute;
+  width: 38%;
+  border: 5px solid #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(62, 39, 35, .16);
+}
+
+.hero-collage .img-kecil-kiri {
+  left: 0;
+  bottom: 10px;
+  transform: rotate(-5deg);
+}
+
+.hero-collage .img-kecil-kanan {
+  right: 0;
+  top: 6px;
+  transform: rotate(6deg);
+}
+
+/* ---------- Judul section ---------- */
+.section-kicker {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--rre-coklat);
+  margin-bottom: .4rem;
+}
+
+.section-title {
+  font-weight: 800;
+  color: var(--rre-coklat-tua);
+  margin-bottom: .65rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--rre-emas);
+  margin: .8rem auto 0;
+}
+
+.section-desc {
+  max-width: 640px;
+  font-size: .97rem;
+}
+
+.bg-section {
+  background-color: var(--rre-krem);
+}
+
+/* ---------- Kartu umum ---------- */
+.card-rre,
+.card-kontak,
+.card-hasil {
+  border: 1px solid rgba(141, 85, 36, .14);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(62, 39, 35, .06);
+  background-color: #fff;
+}
+
+.info-box {
+  display: flex;
+  gap: .75rem;
+  font-size: .87rem;
+  padding: .85rem;
+  border-radius: 12px;
+  background-color: var(--rre-krem);
+  height: 100%;
+}
+
+.info-box i {
+  color: var(--rre-coklat);
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.checklist li {
+  padding: .4rem 0;
+  font-size: .92rem;
+}
+
+.checklist i {
+  color: var(--rre-hijau);
+  margin-right: .5rem;
+}
+
+.img-tentang {
+  height: 230px;
+  object-fit: cover;
+  background-color: #f6ead8;
+}
+
+/* ---------- Produk ---------- */
+.card-produk {
+  transition: transform .22s ease, box-shadow .22s ease;
+  height: 100%;
+}
+
+.card-produk:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 34px rgba(62, 39, 35, .13);
+}
+
+.card-produk .gambar-produk {
+  height: 190px;
+  object-fit: contain;
+  background-color: #f6ead8;
+  padding: .75rem;
+}
+
+.badge-ready {
+  background-color: #e3f4ea;
+  color: var(--rre-hijau);
+  font-weight: 600;
+}
+
+.badge-preorder {
+  background-color: #fff1dc;
+  color: #a6610a;
+  font-weight: 600;
+}
+
+.harga-produk {
+  color: var(--rre-coklat-tua);
+  font-weight: 800;
+}
+
+.varian-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  padding: 0;
+  margin: 0 0 1rem;
+  list-style: none;
+}
+
+.varian-list li {
+  font-size: .74rem;
+  background-color: var(--rre-krem);
+  border: 1px solid rgba(141, 85, 36, .14);
+  border-radius: 50px;
+  padding: .25rem .6rem;
+  color: #5b4636;
+}
+
+/* ---------- Kalkulator ---------- */
+.kalkulator-card {
+  border-top: 4px solid var(--rre-emas);
+}
+
+.form-label {
+  font-size: .9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--rre-emas);
+  box-shadow: 0 0 0 .25rem rgba(217, 165, 102, .25);
+}
+
+.card-hasil {
+  background: linear-gradient(180deg, #fffdf9 0%, #fff 100%);
+  border-top: 4px solid var(--rre-coklat);
+}
+
+.hasil-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .55rem 0;
+  font-size: .93rem;
+}
+
+.hasil-total {
+  font-size: 1.15rem;
+  color: var(--rre-coklat-tua);
+}
+
+.hasil-total strong {
+  color: var(--rre-coklat);
+  font-size: 1.4rem;
+}
+
+.estimasi-box {
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  background-color: #eff7f2;
+  color: var(--rre-hijau);
+}
+
+/* ---------- Tabel ongkir ---------- */
+.tabel-ongkir thead th {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #6b5748;
+  background-color: var(--rre-krem);
+  white-space: nowrap;
+}
+
+.tabel-ongkir tbody td {
+  font-size: .9rem;
+  vertical-align: middle;
+}
+
+/* ---------- FAQ ---------- */
+.accordion-rre .accordion-item,
+#daftarFaq .accordion-item {
+  border: 1px solid rgba(141, 85, 36, .14);
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: .85rem;
+}
+
+#daftarFaq .accordion-button {
+  font-weight: 600;
+  color: var(--rre-coklat-tua);
+  background-color: #fff;
+}
+
+#daftarFaq .accordion-button:not(.collapsed) {
+  background-color: var(--rre-krem);
+  color: var(--rre-coklat);
+  box-shadow: none;
+}
+
+#daftarFaq .accordion-button:focus {
+  box-shadow: 0 0 0 .2rem rgba(217, 165, 102, .3);
+  border-color: var(--rre-emas);
+}
+
+#daftarFaq .accordion-body {
+  font-size: .93rem;
+  color: #55483f;
+  background-color: #fff;
+}
+
+/* ---------- Kontak & footer ---------- */
+.icon-kontak {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--rre-krem);
+  color: var(--rre-coklat);
+  font-size: 1.5rem;
+}
+
+.footer-rre {
+  background-color: var(--rre-coklat-tua);
+  color: rgba(255, 255, 255, .82);
+}
+
+.footer-rre .text-muted {
+  color: rgba(255, 255, 255, .62) !important;
+}
+
+.footer-rre .h6 {
+  color: #fff;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, .72);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--rre-emas);
+}
+
+/* ---------- Responsif tambahan ---------- */
+@media (max-width: 991.98px) {
+  .hero-collage {
+    min-height: 320px;
+    margin-top: 1rem;
+  }
+
+  .hero-collage .img-utama {
+    width: 78%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-collage {
+    min-height: 250px;
+  }
+
+  .hero-collage .img-kecil {
+    border-width: 3px;
+  }
+
+  .display-5 {
+    font-size: 2.1rem;
+  }
+
+  .btn-lg {
+    font-size: .95rem;
+  }
+}
