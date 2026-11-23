@@ -446,3 +446,9 @@ body {
     font-size: .95rem;
   }
 }
+
+/* ---------- Katalog produk (kartu dihasilkan JS) ---------- */
+.pilih-produk {
+  white-space: nowrap;
+}
+
